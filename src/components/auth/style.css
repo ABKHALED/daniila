@@ -1,0 +1,23 @@
+ .kha::-webkit-scrollbar {
+    width: 10px;
+    overflow: hidden;
+}
+
+
+.kha::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px #efebdf;
+    border-radius: 10px;
+    
+}
+
+
+.kha::-webkit-scrollbar-thumb {
+    background: #bcac76;
+    border-radius: 10px;
+}
+
+
+.kha::-webkit-scrollbar-thumb:hover {
+    background: #bdab70;
+} 
+

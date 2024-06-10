@@ -1,13 +1,148 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Pacifico&display=swap');
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
+  font-family: "Lato", sans-serif;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper {
+  width:80%;
+  /* height: 500px; */
+  aspect-ratio: 1/1;
+}
+.log{
+/* font-family: "Pacifico", cursive; */
+font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  
+ 
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.tsts{
+  
+    background-image: linear-gradient(to left, #000, #888);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    padding: 0 0 0 0;
+    width: fit-content;
+    position: relative;
+}
+.tsts::before{
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  height: 6px;
+  border-radius: 30px;
+  background-image: linear-gradient(to left, #660066, #dbacdc);
+  color: transparent;
+}
+/* .tsts{
+  
+    background-image: linear-gradient(to left, #553c9a, #b393d3);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    padding: 0 0 0px 0;
+    width: fit-content;
+    position: relative;
+}
+.tsts::before{
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  height: 5px;
+  border-radius: 30px;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+} */
+
+.sh{
+box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;}
+
+.gg{
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.ss::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.ss {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+
+/* ///////////////////////////////////////// */
+
+.pulsate-bck {
+  -webkit-animation: pulsate-bck 1s ease-in-out infinite both;
+  animation: pulsate-bck 1s ease-in-out infinite both;
+}
+@-webkit-keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.cust {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
